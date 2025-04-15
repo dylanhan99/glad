@@ -99,10 +99,10 @@ function(__glad_c_library CARGS CFILES)
         elseif(SPEC STREQUAL "gl")
             list(APPEND GGC_FILES
                 "${GLAD_DIR}/include/KHR/khrplatform.h"
-                "${GLAD_DIR}/include/glad/gl.h"
+                "${GLAD_DIR}/include/glad/glad.h"
                 )
             if(NOT GGC_HEADERONLY)
-                list(APPEND GGC_FILES "${GLAD_DIR}/src/gl.c")
+                list(APPEND GGC_FILES "${GLAD_DIR}/src/glad.c")
             endif()
         elseif(SPEC STREQUAL "gles1")
             list(APPEND GGC_FILES
